@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://pvpfun.fun">Website</a> •
   <a href="https://x.com/PVPFUNSOL">Twitter</a> •
-  <a href="https://github.com/yourusername/pvp-fun-web3">GitHub</a>
+  <a href="https://github.com/PVPFUNweb3/PvpFunWeb3.git">GitHub</a>
 </p>
 
 ## 🎮 Overview
@@ -67,7 +67,7 @@ PVP.FUN is built on a sophisticated technical stack that leverages Solana's high
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pvp-fun-web3.git
+git clone https://github.com/PVPFUNweb3/PvpFunWeb3.git
 cd pvp-fun-web3
 ```
 
