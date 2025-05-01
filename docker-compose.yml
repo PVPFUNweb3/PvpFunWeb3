@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_SOLANA_NETWORK=devnet
+      - NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com
+    restart: always
+    volumes:
+      - ./public:/app/public
+    networks:
+      - pvp_network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+  
+  # Redis for caching and rate limiting
+  redis:
+    image: redis:alpine
+    restart: always
+    networks:
+      - pvp_network
+    volumes:
+      - redis_data:/data
+
+  # Add database service if needed
+  # db:
+  #   image: postgres:14-alpine
+  #   restart: always
+  #   environment:
+  #     - POSTGRES_PASSWORD=yourpassword
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_DB=pvpfun
+  #   volumes:
+  #     - db_data:/var/lib/postgresql/data
+  #   networks:
+  #     - pvp_network
+
+networks:
+  pvp_network:
+    driver: bridge
+
+volumes:
+  redis_data:
+  # db_data:

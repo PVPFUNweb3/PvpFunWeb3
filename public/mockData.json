@@ -1,0 +1,105 @@
+{
+  "gameStats": {
+    "totalMatches": 68432,
+    "activePlayers": 3240,
+    "averageKills": 12.5,
+    "topPlayer": "CryptoShooter99",
+    "recentMatches": [
+      {
+        "id": "match123",
+        "winner": "team1",
+        "score": "16-14",
+        "map": "de_dust2_pixel",
+        "timestamp": "2025-01-15T14:32:42Z"
+      },
+      {
+        "id": "match124",
+        "winner": "team2",
+        "score": "16-7",
+        "map": "de_nuke_pixel",
+        "timestamp": "2025-01-15T13:20:18Z"
+      },
+      {
+        "id": "match125",
+        "winner": "team1",
+        "score": "16-12",
+        "map": "de_inferno_pixel",
+        "timestamp": "2025-01-15T12:05:33Z"
+      }
+    ]
+  },
+  "nftCollections": {
+    "weapons": [
+      {
+        "id": "weapon_ak47",
+        "name": "AK-47 Collection",
+        "totalSupply": 1000,
+        "minted": 324,
+        "floorPrice": 0.75,
+        "rarities": ["Common", "Rare", "Epic", "Legendary"]
+      },
+      {
+        "id": "weapon_awp",
+        "name": "AWP Collection",
+        "totalSupply": 500,
+        "minted": 283,
+        "floorPrice": 1.2,
+        "rarities": ["Common", "Rare", "Epic", "Legendary"]
+      },
+      {
+        "id": "weapon_knife",
+        "name": "Knife Collection",
+        "totalSupply": 200,
+        "minted": 134,
+        "floorPrice": 3.5,
+        "rarities": ["Rare", "Epic", "Legendary"]
+      }
+    ],
+    "characters": [
+      {
+        "id": "char_terrorist",
+        "name": "Terrorist Collection",
+        "totalSupply": 800,
+        "minted": 532,
+        "floorPrice": 0.45,
+        "rarities": ["Common", "Rare", "Epic"]
+      },
+      {
+        "id": "char_counterterrorist",
+        "name": "Counter-Terrorist Collection",
+        "totalSupply": 800,
+        "minted": 418,
+        "floorPrice": 0.5,
+        "rarities": ["Common", "Rare", "Epic"]
+      }
+    ]
+  },
+  "tokenomics": {
+    "pvpToken": {
+      "totalSupply": 100000000,
+      "circulatingSupply": 35000000,
+      "price": 0.015,
+      "marketCap": 1500000,
+      "holders": 3240,
+      "distribution": [
+        { "name": "Game Rewards", "percentage": 40 },
+        { "name": "Community DAO", "percentage": 25 },
+        { "name": "Team & Development", "percentage": 15 },
+        { "name": "Marketing", "percentage": 10 },
+        { "name": "Liquidity", "percentage": 10 }
+      ]
+    },
+    "exchanges": [
+      {
+        "name": "Jupiter",
+        "url": "https://jup.ag/",
+        "volume24h": 250000
+      },
+      {
+        "name": "Raydium",
+        "url": "https://raydium.io/",
+        "volume24h": 180000
+      }
+    ]
+  }
+} 
